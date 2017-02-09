@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Circular" representedClassName="Circular" syncable="YES">
+        <attribute name="accessCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="archiveName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circularId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="read" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="registerDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="reader" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="CircularReader" syncable="YES"/>
+    </entity>
+    <entity name="CircularReader" representedClassName="CircularReader" syncable="YES">
+        <attribute name="accessDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="circularId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="controlId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="enterprise" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="circular" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Circular" syncable="YES"/>
+    </entity>
+    <entity name="Official" representedClassName="Official" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="adminDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="badgeDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="brand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="complement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dadFilitation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="documentIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="documentInsideCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgBase64" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momFiliation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="naturalness" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="neighborhood" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officialId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="officialRole" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="registerDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="registerId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="registerStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="registerStatusValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resignationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sexuality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shopkeeperName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeLuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="storeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="synced" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="validateDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="ServiceOrder" representedClassName="ServiceOrder" syncable="YES">
+        <attribute name="destinationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enterprise" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finalDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="finalDateHour" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="finalHour" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imgStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="initialDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="initialDateHour" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="initialHour" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="luc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="registerDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="registerHour" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="requesterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceOrderDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceOrderId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shopkeeperName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statusId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="synced" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="typeId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="approvers" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="ServiceOrderApprover" inverseName="serviceOrderApproved" inverseEntity="ServiceOrderApprover" syncable="YES"/>
+        <relationship name="authorizedUsers" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="ServiceOrderAuthorizedUser" inverseName="serviceOrder" inverseEntity="ServiceOrderAuthorizedUser" syncable="YES"/>
+        <relationship name="destinationUser" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ServiceOrderDestinationUser" inverseName="serviceOrder" inverseEntity="ServiceOrderDestinationUser" syncable="YES"/>
+        <relationship name="files" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="ServiceOrderFile" inverseName="serviceOrder" inverseEntity="ServiceOrderFile" syncable="YES"/>
+        <relationship name="observations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ServiceOrderObservations" inverseName="serviceOrder" inverseEntity="ServiceOrderObservations" syncable="YES"/>
+    </entity>
+    <entity name="ServiceOrderApprover" representedClassName="ServiceOrderApprover" syncable="YES">
+        <attribute name="action" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lofted" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="substitute" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userApproverId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="serviceOrderApproved" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ServiceOrder" inverseName="approvers" inverseEntity="ServiceOrder" syncable="YES"/>
+    </entity>
+    <entity name="ServiceOrderAuthorizedUser" representedClassName="ServiceOrderAuthorizedUser" syncable="YES">
+        <attribute name="documentInsideCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enterprise" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceOrderId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userIdAuthorized" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="serviceOrder" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ServiceOrder" inverseName="authorizedUsers" inverseEntity="ServiceOrder" syncable="YES"/>
+    </entity>
+    <entity name="ServiceOrderDestinationUser" representedClassName="ServiceOrderDestinationUser" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enterprise" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="luc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userIdDestination" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="serviceOrder" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ServiceOrder" inverseName="destinationUser" inverseEntity="ServiceOrder" syncable="YES"/>
+    </entity>
+    <entity name="ServiceOrderFile" representedClassName="ServiceOrderFile" syncable="YES">
+        <attribute name="archiveId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileExtension" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceOrderId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="serviceOrder" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ServiceOrder" inverseName="files" inverseEntity="ServiceOrder" syncable="YES"/>
+    </entity>
+    <entity name="ServiceOrderObservations" representedClassName="ServiceOrderObservations" syncable="YES">
+        <attribute name="observation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="registerDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="registerHour" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="serviceOrderId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userObservationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userObservationEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userObservationEnterprise" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userObservationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userObservationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userObservationPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="serviceOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceOrder" inverseName="observations" inverseEntity="ServiceOrder" syncable="YES"/>
+    </entity>
+    <entity name="ServiceOrderRule" representedClassName="ServiceOrderRule" syncable="YES">
+        <attribute name="dayHourToLimit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dayPermission" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="daysAfterLimit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hourAfterLimit" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hourDayAfter" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hourLimit" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hourToLimit" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="serviceOrderRuleId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="weekDay" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="weekDayName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserCalendar" representedClassName="UserCalendar" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="holiday" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="usefulDay" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="UserSector" representedClassName="UserSector" syncable="YES">
+        <attribute name="sectorDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sectorId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="serviceTypes" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="UserServiceType" syncable="YES"/>
+    </entity>
+    <entity name="UserServiceType" representedClassName="UserServiceType" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="attachmentRequired" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="departmentId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="observation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observationRequired" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orderServiceSectorId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="outOfService" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="sector" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="UserSector" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Circular" positionX="-144" positionY="-18" width="128" height="163"/>
+        <element name="CircularReader" positionX="340" positionY="-0" width="128" height="148"/>
+        <element name="Official" positionX="475" positionY="119" width="128" height="583"/>
+        <element name="ServiceOrder" positionX="268" positionY="225" width="128" height="478"/>
+        <element name="ServiceOrderApprover" positionX="81" positionY="-18" width="128" height="148"/>
+        <element name="ServiceOrderAuthorizedUser" positionX="-198" positionY="243" width="128" height="133"/>
+        <element name="ServiceOrderDestinationUser" positionX="-477" positionY="102" width="128" height="148"/>
+        <element name="ServiceOrderFile" positionX="-315" positionY="-27" width="128" height="148"/>
+        <element name="ServiceOrderObservations" positionX="-243" positionY="450" width="128" height="238"/>
+        <element name="UserCalendar" positionX="-441" positionY="470" width="128" height="88"/>
+        <element name="UserSector" positionX="-432" positionY="297" width="128" height="88"/>
+        <element name="UserServiceType" positionX="16" positionY="333" width="128" height="208"/>
+        <element name="ServiceOrderRule" positionX="-441" positionY="605" width="128" height="193"/>
+    </elements>
+</model>
